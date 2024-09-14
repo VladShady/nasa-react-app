@@ -1,0 +1,19 @@
+export default function SideBar(props) {
+    const {handleToggleModal, data} = props
+
+    return (
+        <div className="sidebar">
+            <div onClick={handleToggleModal} className="bgOverlay"></div>
+            <div className="sidebarContent">
+                <h2>{data?.title}</h2>
+                <div className="descriptionContainer">
+                    <p className="descriptionTitle">{data?.date}</p>
+                    <p>This snapshot from the International Space Station was taken on August 11 while orbiting about 430 kilometers above the Indian Ocean, Southern Hemisphere, planet Earth. The spectacular view looks south and east, down toward the planet's horizon and through red and green curtains of aurora australis. The auroral glow is caused by emission from excited oxygen atoms in the extremely rarefied upper atmosphere still present at the level of the orbiting outpost. Green emission from atomic oxygen dominates this scene at altitudes of 100 to 250 kilometers, while red emission from atomic oxygen can extend as high as 500 kilometers altitude. Beyond the glow of these southern lights, this view from low Earth orbit reveals the starry sky from a southern hemisphere perspective. Stars in Orion's belt and the Orion Nebula are near the Earth's limb just left of center. Sirius, alpha star of Canis Major and brightest star in planet Earth's night is above center along the right edge of the southern orbital skyscape. Looking Up: International Observe the Moon NightThis snapshot from the International Space Station was taken on August 11 while orbiting about 430 kilometers above the Indian Ocean, Southern Hemisphere, planet Earth. The spectacular view looks south and east, down toward the planet's horizon and through red and green curtains of aurora australis. The auroral glow is caused by emission from excited oxygen atoms in the extremely rarefied upper atmosphere still present at the level of the orbiting outpost. Green emission from atomic oxygen dominates this scene at altitudes of 100 to 250 kilometers, while red emission from atomic oxygen can extend as high as 500 kilometers altitude. Beyond the glow of these southern lights, this view from low Earth orbit reveals the starry sky from a southern hemisphere perspective. Stars in Orion's belt and the Orion Nebula are near the Earth's limb just left of center. Sirius, alpha star of Canis Major and brightest star in planet Earth's night is above center along the right edge of the southern orbital skyscape. Looking Up: International Observe the Moon NightThis snapshot from the International Space Station was taken on August 11 while orbiting about 430 kilometers above the Indian Ocean, Southern Hemisphere, planet Earth. The spectacular view looks south and east, down toward the planet's horizon and through red and green curtains of aurora australis. The auroral glow is caused by emission from excited oxygen atoms in the extremely rarefied upper atmosphere still present at the level of the orbiting outpost. Green emission from atomic oxygen dominates this scene at altitudes of 100 to 250 kilometers, while red emission from atomic oxygen can extend as high as 500 kilometers altitude. Beyond the glow of these southern lights, this view from low Earth orbit reveals the starry sky from a southern hemisphere perspective. Stars in Orion's belt and the Orion Nebula are near the Earth's limb just left of center. Sirius, alpha star of Canis Major and brightest star in planet Earth's night is above center along the right edge of the southern orbital skyscape. Looking Up: International Observe the Moon Night</p>
+                </div>
+                <button onClick={handleToggleModal}>
+                    <i className="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    )
+}
